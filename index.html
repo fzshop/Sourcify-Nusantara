@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>[NAMA PERUSAHAAN] – Solusi Pengadaan Barang untuk Bisnis</title>
+<title>Sourcify Nusantara – Solusi Pengadaan Barang untuk Bisnis</title>
 <meta name="description" content="Jasa supplier sourcing, perbandingan penawaran, dan pendampingan pengadaan barang untuk bisnis di Indonesia.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E📦%3C/text%3E%3C/svg%3E">
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -12,7 +12,7 @@
 box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--navy:#0a1a30;--navy2:#16355f;--bg:#0c1522;--soft:#111d2d;--ink:#e8eef5;--mut:#9aabbc;--line:#26364a;--acc:#2fb88c;--accT:#04221a;--card:#13202f;--warn:#2b2410;--warnT:#f0d58a;--err:#ff8a80}}
 :root[data-theme="dark"]{--navy:#0a1a30;--navy2:#16355f;--bg:#0c1522;--soft:#111d2d;--ink:#e8eef5;--mut:#9aabbc;--line:#26364a;--acc:#2fb88c;--accT:#04221a;--card:#13202f;--warn:#2b2410;--warnT:#f0d58a;--err:#ff8a80}
-*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:76px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:76px;overflow-x:hidden;-webkit-text-size-adjust:100%}
 img,svg{max-width:100%}body{margin:0;overflow-x:clip;overflow-wrap:break-word;background:var(--bg);color:var(--ink);font:400 16px/1.65 'Public Sans',system-ui,sans-serif}
 h1,h2,h3{font-family:'Bricolage Grotesque','Public Sans',sans-serif;line-height:1.15;margin:0 0 .5em;color:var(--ink)}
 h1{font-size:clamp(2rem,5vw,3.2rem);color:#fff}h2{font-size:clamp(1.5rem,3.2vw,2.1rem)}h3{font-size:1.1rem}
@@ -39,10 +39,10 @@ td.best{background:color-mix(in srgb,var(--acc) 14%,transparent);font-weight:600
 .grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(min(260px,100%),1fr));margin-top:28px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:22px}.card p{color:var(--mut);margin:0 0 .8em;font-size:.95rem}
 .ic{font-size:1.6rem;display:block;margin-bottom:8px}
-.probs{list-style:none;padding:0;margin:24px 0 0;display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.probs{list-style:none;padding:0;margin:24px 0 0;display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(min(230px,100%),1fr))}
 .probs li{border-left:4px solid var(--acc);background:var(--card);padding:14px 16px;border-radius:0 8px 8px 0}
 .disc{background:var(--warn);color:var(--warnT);border-radius:8px;padding:12px 16px;font-size:.92rem;margin-top:22px}
-.steps{counter-reset:s;list-style:none;padding:0;margin:28px 0 0;display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(190px,1fr))}
+.steps{counter-reset:s;list-style:none;padding:0;margin:28px 0 0;display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(min(190px,100%),1fr))}
 .steps li{counter-increment:s;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px;font-size:.95rem}
 .steps li::before{content:counter(s);display:grid;place-items:center;width:32px;height:32px;border-radius:50%;background:var(--navy2);color:#fff;font-weight:600;margin-bottom:10px}
 details{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:14px 18px;margin-bottom:10px}summary{cursor:pointer;font-weight:600}details p{margin:10px 0 0;color:var(--mut)}
@@ -50,22 +50,27 @@ details{background:var(--card);border:1px solid var(--line);border-radius:8px;pa
 .prog{height:8px;background:var(--line);border-radius:9px;overflow:hidden;margin:8px 0 6px}.prog i{display:block;height:100%;background:var(--acc);width:25%;transition:width .3s}
 .fstep{display:none}.fstep.on{display:block}.row{display:grid;gap:14px;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.row>*{min-width:0}@media(max-width:640px){.row{grid-template-columns:minmax(0,1fr)}}
 label{display:block;font-weight:500;font-size:.92rem;margin-bottom:14px}label small{color:var(--mut);font-weight:400}.req{color:var(--err)}
-input,select,textarea{width:100%;margin-top:5px;padding:10px 12px;font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:8px}
+input,select,textarea{width:100%;min-width:0;max-width:100%;margin-top:5px;padding:10px 12px;font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:8px}
 input.bad,select.bad,textarea.bad{border-color:var(--err)}.err{color:var(--err);font-size:.82rem;display:none}.bad+.err{display:block}
 .cond{display:none;border:1px dashed var(--line);border-radius:8px;padding:14px;margin-bottom:14px}.cond.on{display:block}
 .chk{display:flex;gap:10px;align-items:flex-start;font-weight:400}.chk input{width:auto;margin-top:5px}
 .nav2{display:flex;justify-content:space-between;gap:10px;margin-top:10px}
 dl{margin:0;display:grid;grid-template-columns:minmax(0,200px) minmax(0,1fr);gap:6px 14px;font-size:.92rem}@media(max-width:480px){dl{grid-template-columns:minmax(0,1fr)}dd{margin-bottom:8px}}dt{color:var(--mut)}dd{margin:0;word-break:break-word}
+.serr{display:none;background:color-mix(in srgb,var(--err) 12%,var(--bg));color:var(--ink);border:1px solid var(--err);border-radius:8px;padding:12px 16px;font-size:.92rem;margin-top:16px}
 footer{background:var(--navy);color:#c5d2e2;padding:48px 0 28px;font-size:.92rem}footer h3{color:#fff;font-size:1rem}footer ul{list-style:none;padding:0;margin:0}footer li{margin-bottom:6px}
 .fg{display:grid;gap:28px;grid-template-columns:minmax(0,2fr) minmax(0,1fr) minmax(0,1fr) minmax(0,1.3fr)}@media(max-width:860px){.fg{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}}@media(max-width:520px){.fg{grid-template-columns:minmax(0,1fr)}}
-#toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--navy);color:#fff;padding:10px 18px;border-radius:8px;display:none;z-index:50;max-width:90vw}
-@media(max-width:640px){section{padding:48px 0}.hero{padding:40px 0 48px}.form{padding:18px 16px}.cta .btn{width:100%}.mock{padding:14px}}
+#toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--navy);color:#fff;padding:10px 18px;border-radius:8px;display:none;z-index:70;max-width:90vw}
+.ov{position:fixed;inset:0;background:#050c1dcc;z-index:60;display:none;align-items:flex-start;justify-content:center;overflow:auto;padding:24px 16px}.ov.on{display:flex}
+.modal{background:var(--card);color:var(--ink);border-radius:12px;width:100%;max-width:720px;padding:26px;margin:auto}
+.mh{display:flex;justify-content:space-between;align-items:start;gap:12px}.x{background:none;border:0;font-size:1.8rem;line-height:1;cursor:pointer;color:var(--mut)}
+.doc h3{font-size:1.05rem;margin:1.5em 0 .4em}.doc p,.doc li{color:var(--mut);font-size:.97rem}.doc ul{padding-left:1.2em;margin:.3em 0 1em}.doc a{text-decoration:underline}.upd{font-size:.85rem}
+@media(max-width:640px){section{padding:48px 0}.hero{padding:40px 0 48px}.form{padding:18px 16px}.cta .btn{width:100%}.mock{padding:14px}.ov{padding:0}.modal{border-radius:0;min-height:100%;padding:20px 16px;max-width:none}}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 </style>
 </head>
 <body>
 <header><div class="wrap nav">
-<a class="brand" href="#beranda" data-co>[NAMA PERUSAHAAN]</a>
+<a class="brand" href="#beranda" data-co>Sourcify Nusantara</a>
 <button class="burger" aria-expanded="false" aria-controls="menu">Menu</button>
 <nav aria-label="Utama"><ul id="menu">
 <li><a href="#beranda">Beranda</a></li><li><a href="#layanan">Layanan</a></li><li><a href="#kategori">Kategori Barang</a></li><li><a href="#cara-kerja">Cara Kerja</a></li><li><a href="#faq">FAQ</a></li>
@@ -113,6 +118,7 @@ footer{background:var(--navy);color:#c5d2e2;padding:48px 0 28px;font-size:.92rem
 
 <section id="form"><div class="wrap"><h2 style="text-align:center">Formulir permintaan pengadaan</h2><p class="lead" style="margin:auto;text-align:center">Isi sebisa Anda. Anggaran boleh dikosongkan jika belum diketahui.</p>
 <form class="form" id="f" novalidate>
+<div style="position:absolute;left:-9999px" aria-hidden="true"><label>Website<input id="hp" name="website" tabindex="-1" autocomplete="off"></label></div>
 <strong id="stl">Langkah 1 dari 4: Informasi perusahaan</strong>
 <div class="prog" role="progressbar" aria-valuemin="1" aria-valuemax="4" aria-valuenow="1"><i></i></div><br>
 
@@ -140,7 +146,7 @@ footer{background:var(--navy);color:#c5d2e2;padding:48px 0 28px;font-size:.92rem
 <div class="cond" data-k="otomotif"><strong>Detail otomotif</strong><br><br><div class="row"><label>Merek kendaraan<input name="Merek kendaraan"></label><label>Model/tipe kendaraan<input name="Model kendaraan"></label></div><div class="row"><label>Tahun kendaraan<input name="Tahun kendaraan"></label><label>Jenis part<select name="Jenis part"><option>Belum tahu</option><option>Original</option><option>OEM</option><option>Aftermarket</option></select></label></div></div>
 <div class="cond" data-k="elektronik"><strong>Detail elektronik dan HP</strong><br><br><div class="row"><label>Merek perangkat<input name="Merek perangkat"></label><label>Model perangkat<input name="Model perangkat"></label></div><div class="row"><label>Jenis komponen<input name="Jenis komponen"></label><label>Kondisi dan kompatibilitas<input name="Kompatibilitas"></label></div></div>
 <div class="cond" data-k="kemasan"><strong>Detail kemasan</strong><br><br><div class="row"><label>Jenis bahan<input name="Bahan" placeholder="PE, PP, kertas, dll."></label><label>Warna<input name="Warna"></label></div><div class="row"><label>Panjang x lebar x tebal<input name="Dimensi"></label><label>Jenis pegangan<input name="Pegangan"></label></div><div class="row"><label>Cetak logo<select name="Cetak logo"><option>Tanpa logo</option><option>Cetak logo</option></select></label><label>Jumlah per kemasan<input name="Isi per kemasan"></label></div><div class="row"><label>Food grade<select name="Food grade"><option>Tidak perlu</option><option>Perlu</option></select></label><label>Target kuantitas/MOQ yang dapat diterima<input name="MOQ diterima"></label></div></div>
-<label>Tautan foto, katalog, atau spesifikasi <small>(jika ada)</small><input type="url" name="Tautan" placeholder="https://"></label>
+<label>Tautan foto, katalog, atau spesifikasi <small>(jika ada)</small><input type="url" name="Tautan" placeholder="https://"><span class="err">Awali dengan https://</span></label>
 <label>Catatan tambahan<textarea name="Catatan" rows="2"></textarea></label></div>
 
 <div class="fstep">
@@ -159,16 +165,19 @@ footer{background:var(--navy);color:#c5d2e2;padding:48px 0 28px;font-size:.92rem
 <p>Periksa kembali data Anda sebelum dikirim.</p><dl id="sum"></dl><br>
 <label>Dari mana Anda mengetahui layanan kami?<input name="Sumber"></label>
 <label class="chk"><input type="checkbox" id="c1" required> <span>Saya setuju data ini digunakan untuk menindaklanjuti permintaan saya. <span class="req">*</span></span></label>
-<label class="chk"><input type="checkbox" id="c2" required> <span>Saya menyetujui kebijakan privasi. <span class="req">*</span></span></label>
-<div class="disc">Mengirim formulir ini bukan Purchase Order (PO) dan bukan konfirmasi pembelian. Formulir ini belum menimbulkan kewajiban untuk membeli.</div></div>
+<label class="chk"><input type="checkbox" id="c2" required> <span>Saya menyetujui <a href="#" data-doc="Kebijakan Privasi">Kebijakan Privasi</a> dan <a href="#" data-doc="Syarat dan Ketentuan">Syarat dan Ketentuan</a>. <span class="req">*</span></span></label>
+<div class="disc">Mengirim formulir ini bukan Purchase Order (PO) dan bukan konfirmasi pembelian. Formulir ini belum menimbulkan kewajiban untuk membeli.</div>
+<div class="serr" id="serr" role="alert"><strong>Data belum terkirim.</strong> Terjadi kendala koneksi, jadi data Anda belum tersimpan. Silakan coba lagi, atau kirim ringkasan lewat <a href="#" id="waFb" target="_blank" rel="noopener">WhatsApp</a>.</div></div>
 
 <div class="nav2"><button type="button" class="btn ghost" id="bk" style="visibility:hidden">Kembali</button><button type="button" class="btn" id="nx" disabled>Lanjut</button></div>
 </form>
 <div class="form" id="done" style="display:none" tabindex="-1">
-<h2>Ringkasan siap dikirim</h2>
-<div class="disc"><strong>Mode demo:</strong> halaman ini belum terhubung ke server, jadi data Anda <strong>belum tersimpan atau terkirim</strong>. Kirim ringkasan melalui WhatsApp atau salin teksnya di bawah.</div><br>
-<textarea id="out" rows="9" readonly></textarea>
-<div class="cta"><a class="btn wa-send" href="#">Kirim via WhatsApp</a><button class="btn ghost" id="cp" type="button">Salin teks</button><button class="btn ghost" id="rs" type="button">Isi permintaan baru</button></div></div>
+<h2>Permintaan terkirim</h2>
+<p>Terima kasih. Data Anda sudah kami terima dan tim akan menghubungi Anda melalui WhatsApp atau email untuk mengklarifikasi kebutuhan.</p>
+<div class="disc">Pengiriman ini bukan Purchase Order (PO). Pengadaan baru berjalan setelah ada persetujuan dan kesepakatan kedua pihak.</div>
+<h3 style="margin-top:22px">Salinan ringkasan Anda</h3>
+<textarea id="out" rows="8" readonly></textarea>
+<div class="cta"><a class="btn wa-send" href="#" target="_blank" rel="noopener">Konfirmasi via WhatsApp</a><button class="btn ghost" id="cp" type="button">Salin teks</button><button class="btn ghost" id="rs" type="button">Isi permintaan baru</button></div></div>
 </div></section>
 
 <section class="alt"><div class="wrap"><h2>Mengapa memilih kami</h2><div class="grid">
@@ -182,29 +191,31 @@ footer{background:var(--navy);color:#c5d2e2;padding:48px 0 28px;font-size:.92rem
 </main>
 
 <footer><div class="wrap"><div class="fg">
-<div><h3 data-co>[NAMA PERUSAHAAN]</h3><p>Jasa supplier sourcing, perbandingan penawaran, dan pendampingan pengadaan barang untuk bisnis di Indonesia.</p><p>[ALAMAT PERUSAHAAN]</p></div>
+<div><h3 data-co>Sourcify Nusantara</h3><p>Jasa supplier sourcing, perbandingan penawaran, dan pendampingan pengadaan barang untuk bisnis di Indonesia.</p><p>Kabupaten Bogor, Provinsi Jawa Barat, Indonesia.</p></div>
 <div><h3>Navigasi</h3><ul><li><a href="#layanan">Layanan</a></li><li><a href="#kategori">Kategori Barang</a></li><li><a href="#cara-kerja">Cara Kerja</a></li><li><a href="#faq">FAQ</a></li></ul></div>
 <div><h3>Layanan</h3><ul><li>Supplier Sourcing</li><li>Perbandingan Penawaran</li><li>Procurement Support</li><li>Custom Sourcing</li></ul></div>
-<div><h3>Kontak</h3><ul><li><a class="wa" href="#">WhatsApp: <span data-wa>[NOMOR WHATSAPP]</span></a></li><li><a class="ml" href="#"><span data-em>[EMAIL PERUSAHAAN]</span></a></li><li><a href="#" class="pol">Kebijakan Privasi</a></li><li><a href="#" class="pol">Syarat dan Ketentuan</a></li></ul></div></div>
-<p style="margin-top:28px">© <span id="yr"></span> <span data-co>[NAMA PERUSAHAAN]</span>. Seluruh hak dilindungi.</p></div></footer>
+<div><h3>Kontak</h3><ul><li><a class="wa" href="#">WhatsApp: <span data-wa>0819 0971 5630</span></a></li><li><a class="ml" href="#"><span data-em>sourcifynusantara@gmail.com</span></a></li><li><a href="#" data-doc="Kebijakan Privasi">Kebijakan Privasi</a></li><li><a href="#" data-doc="Syarat dan Ketentuan">Syarat dan Ketentuan</a></li></ul></div></div>
+<p style="margin-top:28px">© <span id="yr"></span> <span data-co>Sourcify Nusantara</span>. Seluruh hak dilindungi.</p></div></footer>
 <div id="toast" role="status"></div>
+<div class="ov" id="ov2" role="dialog" aria-modal="true" aria-labelledby="mt2"><div class="modal doc" id="modal2"></div></div>
 
 <script>
 // ===== KONFIGURASI: ubah di sini =====
-var CONFIG={nama:"[NAMA PERUSAHAAN]",wa:"",email:"",alamat:"[ALAMAT PERUSAHAAN]"}; // wa format: 628123456789
+var CONFIG={nama:"Sourcify Nusantara",wa:"6281909715630",waDisplay:"0819 0971 5630",email:"sourcifynusantara@gmail.com",
+sheetUrl:"https://script.google.com/macros/s/AKfycbxVyDXy1G-5zyqzMvEW8g0o8OOQNwd5JXcrPvLhKXan1jwQ4amdXzefcOz6xv75h_UJcQ/exec",
+formName:"Permintaan Pengadaan B2B"}; // wa: format internasional tanpa + dan tanpa spasi
 // =====================================
 var $=function(s,r){return(r||document).querySelector(s)},$$=function(s,r){return Array.from((r||document).querySelectorAll(s))};
 function toast(m){var t=$('#toast');t.textContent=m;t.style.display='block';clearTimeout(toast.h);toast.h=setTimeout(function(){t.style.display='none'},3500)}
-var ok=function(v){return v&&v.indexOf('[')<0};
 $$('[data-co]').forEach(function(e){e.textContent=CONFIG.nama});
-if(ok(CONFIG.wa))$$('[data-wa]').forEach(function(e){e.textContent='+'+CONFIG.wa});
-if(ok(CONFIG.email))$$('[data-em]').forEach(function(e){e.textContent=CONFIG.email});
+$$('[data-wa]').forEach(function(e){e.textContent=CONFIG.waDisplay});
+$$('[data-em]').forEach(function(e){e.textContent=CONFIG.email});
 $('#yr').textContent=new Date().getFullYear();
 function waUrl(t){return 'https://wa.me/'+CONFIG.wa+(t?'?text='+encodeURIComponent(t):'')}
-function guard(e,what){if(!CONFIG.wa){e.preventDefault();toast('Nomor WhatsApp belum diatur di CONFIG.')}}
-$$('.wa').forEach(function(a){if(CONFIG.wa)a.href=waUrl('Halo, saya ingin konsultasi kebutuhan pengadaan barang.');a.addEventListener('click',guard)});
-var ml=$('.ml');if(CONFIG.email)ml.href='mailto:'+CONFIG.email;else ml.addEventListener('click',function(e){e.preventDefault();toast('Email belum diatur di CONFIG.')});
-$$('.pol').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();toast('Halaman ini belum disiapkan. Tambahkan teks hukum dari konsultan Anda.')})});
+$$('.wa').forEach(function(a){a.href=waUrl('Halo, saya ingin konsultasi kebutuhan pengadaan barang.');a.target='_blank';a.rel='noopener'});
+var mSub="Pertanyaan dari website Sourcify Nusantara",mob=/Android|iPhone|iPad|iPod/i.test(navigator.userAgent),ml=$('.ml');
+ml.href='mailto:'+CONFIG.email+'?subject='+encodeURIComponent(mSub);
+ml.addEventListener('click',function(e){if(mob)return;e.preventDefault();window.open('https://mail.google.com/mail/?view=cm&fs=1&to='+encodeURIComponent(CONFIG.email)+'&su='+encodeURIComponent(mSub),'_blank','noopener')});
 
 var b=$('.burger'),mn=$('#menu');b.onclick=function(){var o=mn.classList.toggle('open');b.setAttribute('aria-expanded',o)};
 $$('#menu a').forEach(function(a){a.onclick=function(){mn.classList.remove('open');b.setAttribute('aria-expanded',false)}});
@@ -218,10 +229,10 @@ var o=document.createElement('option');o.value=c[0];o.textContent=c[2];kat.appen
 kat.onchange=function(){$$('.cond').forEach(function(e){e.classList.toggle('on',e.dataset.k===kat.value)});val()};
 $('#jns').onchange=function(){$('#frek').style.display=this.value==='Rutin'?'block':'none'};
 
-var FAQ=[["Apa itu jasa supplier sourcing?","Layanan mencari calon supplier, meminta penawaran, dan menyusun perbandingannya sesuai kebutuhan barang Anda."],["Apakah melayani UMKM?","Ya, kami menerima permintaan dari UMKM maupun perusahaan yang lebih besar."],["Apakah ada minimum nilai pengadaan?","Ketentuan minimum belum ditetapkan dan dapat berbeda per kebutuhan. Sampaikan kebutuhan Anda, lalu kami konfirmasikan."],["Apakah klien dapat menentukan merek?","Bisa. Anda dapat menyebut merek yang diinginkan atau meminta rekomendasi alternatif."],["Bagaimana biaya jasa dihitung?","Skema biaya jasa akan disampaikan dan disepakati sebelum proses berjalan, sesuai lingkup pekerjaan."],["Apakah bisa mencari supplier di luar kota?","Bisa, selama supplier dan pengiriman memungkinkan. Lokasi pengiriman dapat diisi pada formulir."],["Apakah bisa melakukan pengadaan rutin?","Bisa. Pilih jenis kebutuhan rutin pada formulir dan sebutkan frekuensinya."],["Apakah perusahaan menjual barang sendiri atau menjadi perantara?","[Sesuaikan dengan model bisnis final Anda sebelum publikasi.]"],["Bagaimana sistem pembayaran?","Sistem pembayaran disepakati per transaksi, termasuk kemungkinan termin. Kebijakan final akan diinformasikan sebelum pemesanan."],["Apakah permintaan pengadaan menjamin barang tersedia?","Tidak. Ketersediaan bergantung pada hasil pencarian supplier, dan kami akan menyampaikan hasilnya apa adanya."]];
+var FAQ=[["Apa itu jasa supplier sourcing?","Layanan mencari calon supplier, meminta penawaran, dan menyusun perbandingannya sesuai kebutuhan barang Anda."],["Apakah melayani UMKM?","Ya, kami menerima permintaan dari UMKM maupun perusahaan yang lebih besar."],["Apakah ada minimum nilai pengadaan?","Ketentuan minimum belum ditetapkan dan dapat berbeda per kebutuhan. Sampaikan kebutuhan Anda, lalu kami konfirmasikan."],["Apakah klien dapat menentukan merek?","Bisa. Anda dapat menyebut merek yang diinginkan atau meminta rekomendasi alternatif."],["Bagaimana biaya jasa dihitung?","Skema biaya jasa akan disampaikan dan disepakati sebelum proses berjalan, sesuai lingkup pekerjaan."],["Apakah bisa mencari supplier di luar kota?","Bisa, selama supplier dan pengiriman memungkinkan. Lokasi pengiriman dapat diisi pada formulir."],["Apakah bisa melakukan pengadaan rutin?","Bisa. Pilih jenis kebutuhan rutin pada formulir dan sebutkan frekuensinya."],["Apakah perusahaan menjual barang sendiri atau menjadi perantara?","Kami berperan sebagai perantara pengadaan: mencari supplier, meminta penawaran, dan mendampingi pemesanan. Pembelian dilakukan sesuai kesepakatan, dan peran serta biaya jasa dijelaskan sebelum pemesanan."],["Bagaimana sistem pembayaran?","Sistem pembayaran disepakati per transaksi, termasuk kemungkinan termin. Kebijakan final akan diinformasikan sebelum pemesanan."],["Apakah permintaan pengadaan menjamin barang tersedia?","Tidak. Ketersediaan bergantung pada hasil pencarian supplier, dan kami akan menyampaikan hasilnya apa adanya."]];
 FAQ.forEach(function(q){var d=document.createElement('details');d.innerHTML='<summary></summary><p></p>';$('summary',d).textContent=q[0];$('p',d).textContent=q[1];$('#faqs').appendChild(d)});
 
-var st=0,steps=$$('.fstep'),T=['Informasi perusahaan','Detail barang','Anggaran dan ketentuan','Konfirmasi'],nx=$('#nx'),bk=$('#bk');
+var st=0,steps=$$('.fstep'),T=['Informasi perusahaan','Detail barang','Anggaran dan ketentuan','Konfirmasi'],nx=$('#nx'),bk=$('#bk'),sending=false,lastText='';
 function fieldOk(f){var v=f.value.trim(),bad=false;
 if(f.required&&f.type!=='checkbox'&&!v)bad=true;
 if(v&&f.dataset.t==='email'&&!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v))bad=true;
@@ -230,25 +241,115 @@ if(f.type==='number'&&f.required&&!(+v>0))bad=true;
 if(f.type==='url'&&v&&!/^https?:\/\/\S+\.\S+/.test(v))bad=true;return !bad}
 function stepOk(show){var all=true;$$('input,select,textarea',steps[st]).forEach(function(f){if(f.closest('.cond:not(.on)')||f.type==='checkbox')return;var g=fieldOk(f);if(!g)all=false;if(show)f.classList.toggle('bad',!g)});
 if(st===3&&!($('#c1').checked&&$('#c2').checked))all=false;return all}
-function val(){nx.disabled=!stepOk(false)}
-function render(){steps.forEach(function(s,i){s.classList.toggle('on',i===st)});$('#stl').textContent='Langkah '+(st+1)+' dari 4: '+T[st];
+function val(){nx.disabled=sending||!stepOk(false)}
+function render(go){steps.forEach(function(s,i){s.classList.toggle('on',i===st)});$('#stl').textContent='Langkah '+(st+1)+' dari 4: '+T[st];
 $('.prog i').style.width=(st+1)*25+'%';$('.prog').setAttribute('aria-valuenow',st+1);bk.style.visibility=st?'visible':'hidden';
-nx.textContent=st===3?'Kirim Permintaan Pengadaan':'Lanjut';if(st===3)summary();val();$('#f').scrollIntoView()}
+nx.textContent=st===3?'Kirim Permintaan Pengadaan':'Lanjut';$('#serr').style.display='none';if(st===3)summary();val();if(go)$('#f').scrollIntoView()}
 function summary(){var d=$('#sum');d.innerHTML='';data().forEach(function(p){var a=document.createElement('dt'),c=document.createElement('dd');a.textContent=p[0];c.textContent=p[1];d.append(a,c)})}
-function data(){var o=[];$$('input,select,textarea',$('#f')).forEach(function(f){if(f.type==='checkbox'||!f.name||f.name==='Sumber')return;if(f.closest('.cond:not(.on)'))return;if(f.id==='frek'||(f.name==='Frekuensi'&&$('#jns').value!=='Rutin'))return;var v=f.value.trim();if(!v)return;
+function data(){var o=[];$$('input,select,textarea',$('#f')).forEach(function(f){if(f.type==='checkbox'||!f.name||f.name==='Sumber'||f.name==='website')return;if(f.closest('.cond:not(.on)'))return;if(f.name==='Frekuensi'&&$('#jns').value!=='Rutin')return;var v=f.value.trim();if(!v)return;
 o.push([f.name,f.tagName==='SELECT'&&f.id==='kat'?f.options[f.selectedIndex].text:v])});return o}
 $('#f').addEventListener('input',val);$('#f').addEventListener('change',val);
-$('#f').addEventListener('focusout',function(e){if(e.target.matches('input,select,textarea')&&e.target.type!=='checkbox')e.target.classList.toggle('bad',!fieldOk(e.target)&&(e.target.value||e.target.required))});
-bk.onclick=function(){st--;render()};
-nx.onclick=function(){if(!stepOk(true)){toast('Lengkapi kolom bertanda merah dulu.');return}
-if(st<3){st++;render();return}
-var src=$('[name=Sumber]').value.trim(),t='Halo, saya mengajukan permintaan pengadaan:\n\n'+data().map(function(p){return p[0]+': '+p[1]}).join('\n')+(src?'\nMengetahui layanan dari: '+src:'');
-$('#out').value=t;var w=$('.wa-send');w.href=CONFIG.wa?waUrl(t):'#';
-$('#f').style.display='none';var dn=$('#done');dn.style.display='block';dn.focus();dn.scrollIntoView()};
-$('.wa-send').addEventListener('click',guard);
+$('#f').addEventListener('focusout',function(e){if(e.target.matches('input,select,textarea')&&e.target.type!=='checkbox'&&e.target.name!=='website')e.target.classList.toggle('bad',!fieldOk(e.target)&&!!(e.target.value||e.target.required))});
+bk.onclick=function(){st--;render(true)};
+function build(){var src=$('[name=Sumber]').value.trim();return 'Halo, saya mengajukan permintaan pengadaan:\n\n'+data().map(function(p){return p[0]+': '+p[1]}).join('\n')+(src?'\nMengetahui layanan dari: '+src:'')}
+function okSend(){lastText=build();$('#out').value=lastText;$('.wa-send').href=waUrl(lastText);$('#f').style.display='none';var dn=$('#done');dn.style.display='block';dn.focus();dn.scrollIntoView()}
+nx.onclick=function(){if(sending)return;if(!stepOk(true)){toast('Lengkapi kolom bertanda merah dulu.');return}
+if(st<3){st++;render(true);return}
+sending=true;nx.disabled=true;nx.textContent='Mengirim…';$('#serr').style.display='none';
+var obj={};data().forEach(function(p){obj[p[0]]=p[1]});var src=$('[name=Sumber]').value.trim();if(src)obj['Sumber']=src;obj['Persetujuan']='Ya (Kebijakan Privasi dan Syarat Ketentuan)';
+fetch(CONFIG.sheetUrl,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify({form:CONFIG.formName,data:obj,website:$('#hp').value})})
+.then(function(r){return r.json()}).then(function(j){return !!(j&&j.ok)}).catch(function(){return false})
+.then(function(ok){sending=false;nx.textContent='Kirim Permintaan Pengadaan';val();
+if(ok){okSend()}else{$('#waFb').href=waUrl(build());$('#serr').style.display='block'}})};
 $('#cp').onclick=function(){var o=$('#out');o.select();try{navigator.clipboard.writeText(o.value).then(function(){toast('Teks disalin.')},function(){document.execCommand('copy');toast('Teks disalin.')})}catch(e){document.execCommand('copy');toast('Teks disalin.')}};
-$('#rs').onclick=function(){$('#f').reset();$$('.cond').forEach(function(e){e.classList.remove('on')});$('#frek').style.display='none';st=0;$('#done').style.display='none';$('#f').style.display='block';render()};
-render();
+$('#rs').onclick=function(){$('#f').reset();$$('.cond').forEach(function(e){e.classList.remove('on')});$('#frek').style.display='none';st=0;$('#done').style.display='none';$('#f').style.display='block';render(true)};
+render(false);
+var UPD="Terakhir diperbarui: 18 Oktober 2026";
+var DOCS={
+"Kebijakan Privasi":`<p class="upd muted">${UPD}</p>
+<p>Kebijakan Privasi ini menjelaskan bagaimana Sourcify Nusantara ("Kami"), usaha yang berkedudukan di Kabupaten Bogor, Provinsi Jawa Barat, Indonesia, mengumpulkan, menggunakan, dan melindungi data pribadi Anda saat menggunakan situs ini dan mengirim formulir kepada Kami.</p>
+<h3>1. Data yang Kami kumpulkan</h3>
+<p>Kami hanya mengumpulkan data yang Anda isi sendiri melalui formulir atau kirim melalui WhatsApp dan email, yaitu:</p>
+<ul>
+<li><b>Formulir permintaan pengadaan:</b> nama perusahaan atau usaha, jenis usaha, nama dan jabatan PIC, email, nomor WhatsApp, kota dan alamat pengiriman, rincian barang (kategori, nama, spesifikasi, merek, jumlah, kondisi, tautan foto atau katalog), anggaran, target waktu, preferensi pengadaan, dan catatan tambahan.</li>
+<li><b>Lain-lain:</b> sumber Anda mengetahui layanan Kami (jika diisi) dan isi komunikasi Anda melalui WhatsApp atau email.</li>
+</ul>
+<p>Kami tidak meminta data sensitif seperti nomor KTP, data kesehatan, atau data keuangan pribadi. Mohon tidak mencantumkannya di kolom isian.</p>
+<h3>2. Tujuan penggunaan data</h3>
+<ul>
+<li>Menanggapi permintaan Anda dan menghubungi Anda melalui WhatsApp atau email.</li>
+<li>Mencari supplier, mengumpulkan serta membandingkan penawaran untuk kebutuhan pengadaan klien.</li>
+<li>Menyimpan catatan komunikasi dan dokumentasi pengadaan, serta memenuhi kewajiban hukum bila ada.</li>
+</ul>
+<p>Kami tidak menjual data pribadi Anda dan tidak menggunakannya untuk iklan pihak ketiga.</p>
+<h3>3. Dasar pemrosesan</h3>
+<p>Kami memproses data Anda berdasarkan persetujuan yang Anda berikan saat mengirim formulir, dan untuk menindaklanjuti permintaan yang Anda ajukan. Anda dapat menarik persetujuan kapan saja dengan menghubungi Kami (lihat bagian Hak Anda).</p>
+<h3>4. Penyimpanan dan layanan pihak ketiga</h3>
+<p>Data formulir disimpan di Google Sheets melalui Google Apps Script yang dikelola Kami. Komunikasi lanjutan berlangsung melalui WhatsApp dan Gmail. Situs ini juga memuat font dari Google Fonts, sehingga alamat IP perangkat Anda dapat diterima Google saat halaman dibuka. Layanan-layanan tersebut memiliki kebijakan privasi masing-masing, dan data dapat diproses di server yang berada di luar Indonesia.</p>
+<h3>5. Pembagian data kepada pihak lain</h3>
+<p>Kami membagikan data hanya bila diperlukan untuk menjalankan layanan:</p>
+<ul>
+<li>Rincian kebutuhan barang dapat Kami teruskan kepada calon supplier untuk meminta penawaran. Data kontak dan identitas Anda tidak Kami bagikan tanpa sepengetahuan Anda, kecuali diperlukan untuk transaksi yang telah Anda setujui.</li>
+<li>Kami dapat mengungkapkan data bila diwajibkan oleh hukum atau permintaan resmi pihak berwenang.</li>
+</ul>
+<h3>6. Keamanan</h3>
+<p>Akses ke data dibatasi pada pihak yang berkepentingan di tim Kami dan dilindungi melalui akun Google yang diamankan. Meskipun demikian, tidak ada sistem yang sepenuhnya bebas risiko, dan Kami tidak dapat menjamin keamanan mutlak atas data yang dikirim melalui internet.</p>
+<h3>7. Lama penyimpanan</h3>
+<p>Data disimpan selama diperlukan untuk tujuan di atas. Data dihapus atau dianonimkan atas permintaan Anda, sepanjang tidak ada kewajiban hukum yang mengharuskan Kami menyimpannya.</p>
+<h3>8. Hak Anda</h3>
+<p>Sesuai Undang-Undang Nomor 27 Tahun 2022 tentang Pelindungan Data Pribadi, Anda berhak meminta akses, perbaikan, atau penghapusan data Anda, menarik persetujuan, dan mengajukan keberatan atas pemrosesan data. Kirim permintaan ke <a href="mailto:sourcifynusantara@gmail.com">sourcifynusantara@gmail.com</a> dengan menyebutkan nama dan data yang Anda kirimkan. Kami akan menanggapi dalam waktu yang wajar.</p>
+<h3>9. Cookie</h3>
+<p>Situs ini tidak menggunakan cookie pelacakan atau cookie iklan.</p>
+<h3>10. Anak di bawah umur</h3>
+<p>Layanan Kami ditujukan bagi pelaku usaha dan individu berusia dewasa. Kami tidak dengan sengaja mengumpulkan data anak di bawah 18 tahun.</p>
+<h3>11. Perubahan kebijakan</h3>
+<p>Kami dapat memperbarui kebijakan ini sewaktu-waktu. Versi terbaru selalu tersedia di situs ini beserta tanggal pembaruannya.</p>
+<h3>12. Kontak</h3>
+<p>Sourcify Nusantara, Kabupaten Bogor, Provinsi Jawa Barat, Indonesia<br>WhatsApp: 0819 0971 5630<br>Email: <a href="mailto:sourcifynusantara@gmail.com">sourcifynusantara@gmail.com</a></p>`,
+"Syarat dan Ketentuan":`<p class="upd muted">${UPD}</p>
+<p>Dengan mengakses situs ini atau mengirim formulir kepada Sourcify Nusantara ("Kami"), Anda menyatakan telah membaca dan menyetujui syarat dan ketentuan berikut. Jika tidak setuju, mohon tidak menggunakan situs ini.</p>
+<h3>1. Tentang situs dan layanan</h3>
+<p>Situs ini memperkenalkan layanan pengadaan barang dan supplier sourcing untuk bisnis di Indonesia. Informasi di situs bersifat umum dan dapat berubah sewaktu-waktu. Kami masih dalam tahap pengembangan jaringan, sehingga cakupan layanan dan kategori barang dapat berkembang atau berubah.</p>
+<h3>2. Formulir bukan perjanjian</h3>
+<p>Pengiriman formulir permintaan pengadaan hanya membuka komunikasi dan bukan Purchase Order (PO). Pengiriman formulir tidak menimbulkan kewajiban bagi Anda maupun Kami. Pengadaan dan kerja sama baru mengikat setelah kedua pihak menyepakatinya secara tertulis, termasuk melalui pesan WhatsApp atau email yang secara jelas menyatakan persetujuan.</p>
+<h3>3. Layanan pengadaan untuk klien</h3>
+<ul>
+<li>Kami membantu mencari supplier, mengumpulkan penawaran, dan menyajikan perbandingan. Keputusan membeli sepenuhnya ada pada klien.</li>
+<li>Kami tidak menjamin ketersediaan barang, harga, waktu pengiriman, maupun keberhasilan pengadaan. Penawaran berlaku sesuai ketentuan masing-masing supplier dan dapat berubah.</li>
+<li>Biaya jasa, bila ada, dibahas dan disepakati sebelum pemesanan dilanjutkan. Tidak ada biaya yang dibebankan tanpa kesepakatan.</li>
+<li>Klien bertanggung jawab atas kebenaran spesifikasi dan informasi kebutuhan yang diberikan.</li>
+</ul>
+<h3>4. Kewajiban pengguna</h3>
+<ul>
+<li>Memberikan data yang benar, akurat, dan terbaru.</li>
+<li>Tidak menggunakan situs untuk tujuan melanggar hukum, menipu, atau mengganggu sistem, termasuk mengirim spam atau data palsu.</li>
+<li>Tidak mengajukan pengadaan barang atau jasa yang dilarang oleh hukum Republik Indonesia. Kami berhak menolak permintaan tersebut.</li>
+</ul>
+<h3>5. Kerahasiaan dan data pribadi</h3>
+<p>Informasi yang Anda kirim hanya Kami gunakan untuk keperluan yang dijelaskan dalam <a href="#" data-doc="Kebijakan Privasi">Kebijakan Privasi</a>. Pihak yang menerima informasi bisnis dari pihak lain melalui Kami diharapkan menjaga kerahasiaannya dan tidak menyalahgunakannya.</p>
+<h3>6. Kekayaan intelektual</h3>
+<p>Nama, logo, tampilan, dan teks di situs ini adalah milik Sourcify Nusantara, kecuali dinyatakan lain. Konten tidak boleh disalin atau digunakan untuk tujuan komersial tanpa izin tertulis.</p>
+<h3>7. Batasan tanggung jawab</h3>
+<p>Sejauh diizinkan hukum, Kami tidak bertanggung jawab atas kerugian tidak langsung, kehilangan keuntungan, atau kerugian akibat keputusan yang diambil berdasarkan informasi di situs, perubahan harga atau stok supplier, keterlambatan atau kegagalan pengiriman oleh supplier, maupun gangguan layanan pihak ketiga seperti WhatsApp, Gmail, dan Google. Ketentuan ini tidak menghapus tanggung jawab yang menurut hukum tidak dapat dikecualikan.</p>
+<h3>8. Tautan dan layanan pihak ketiga</h3>
+<p>Situs ini menyediakan tautan ke WhatsApp dan email. Kami tidak mengendalikan dan tidak bertanggung jawab atas layanan, kebijakan, maupun konten pihak ketiga tersebut.</p>
+<h3>9. Perubahan</h3>
+<p>Kami dapat mengubah syarat dan ketentuan ini sewaktu-waktu. Versi terbaru berlaku sejak dipublikasikan di situs ini. Penggunaan situs setelah perubahan berarti Anda menyetujuinya.</p>
+<h3>10. Hukum yang berlaku dan penyelesaian sengketa</h3>
+<p>Syarat dan ketentuan ini tunduk pada hukum Republik Indonesia. Sengketa diupayakan diselesaikan terlebih dahulu secara musyawarah. Bila tidak tercapai kesepakatan, sengketa diselesaikan melalui pengadilan negeri yang berwenang di wilayah Kabupaten Bogor.</p>
+<h3>11. Kontak</h3>
+<p>Sourcify Nusantara, Kabupaten Bogor, Provinsi Jawa Barat, Indonesia<br>WhatsApp: 0819 0971 5630<br>Email: <a href="mailto:sourcifynusantara@gmail.com">sourcifynusantara@gmail.com</a></p>`
+};
+var ov2=$("#ov2"),md2=$("#modal2");
+function openDoc(name){
+  md2.innerHTML=`<div class="mh"><h2 id="mt2" style="font-size:1.6rem;margin:0">${name}</h2><button class="x" aria-label="Tutup" data-close2>×</button></div><div class="doc" style="margin-top:12px">${DOCS[name]}</div><div class="cta"><button class="btn" data-close2>Tutup</button></div>`;
+  ov2.classList.add("on");document.body.style.overflow="hidden";ov2.scrollTop=0;md2.querySelector(".x").focus();
+}
+function closeDoc(){ov2.classList.remove("on");document.body.style.overflow=""}
+
+document.addEventListener('click',function(e){var d=e.target.closest('[data-doc]');if(d){e.preventDefault();openDoc(d.dataset.doc);return}
+if(e.target.closest('[data-close2]')||e.target===ov2)closeDoc()});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&ov2.classList.contains('on'))closeDoc()});
 </script>
 </body>
 </html>
